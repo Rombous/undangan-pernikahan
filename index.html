@@ -30,11 +30,11 @@
       id="hero"
       class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center ">
       <main>
-        <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
+        <h4>Kepada <span>Bapak/Ibu/Saudara/i</span></h4>
         <h1>Nasa & Tsukasa</h1>
         <p>Akan melaksanankan resepsi pernikahan dalam: </p>
         <div class="simply-countdown"></div>
-        <a href="#home" class="btn btn-lg mt-4">Lihat Undangan</a>
+        <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Lihat Undangan</a>
       </main>
     </section>
 
@@ -50,14 +50,14 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-              <div class="navbar-nav ms-auto">
-                <a class="nav-link" href="#home">Home</a>
-                <a class="nav-link" href="#info">Info</a>
-                <a class="nav-link" href="#Story">Story</a>
-                <a class="nav-link" href="#Galery">Galery</a>
-                <a class="nav-link" href="#rsvp">RSVP</a>
-                <a class="nav-link" href="#gift">Gift</a>
-              </div>
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#gift">Gift</a>       
+            </div>
           </div>
         </div>
       </div>
@@ -114,13 +114,14 @@
             <p class="alamat">
               Alamat: Gedung Putih <br> 1-1 Ōsakajō, Chuo Ward, Osaka, 540-0002, Jepang
             </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13122.84172140209!2d135.5258546!3d34.6872571!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e0cd5c283afd%3A0xf01d07d5ca11e41!2sIstana%20Osaka!5e0!3m2!1sid!2sid!4v1725268057008!5m2!1sid!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <a href="https://maps.app.goo.gl/7QQettJhbUdRKgb38" target="_blank" class="btn btn-light btn-sm my-3">ketuk untuk melihat maps</a>
             <p class="description">jika tidak ada acara mungkin saja salah alamat atau salah tempat </p>
           </div>
         </div>
 
-        <div class="row justify-content-center mt-4">
-          <div class="col-md-5 col-10">
+        <div class="row justify-content-center">
+          <div class="col-md-5 col-10 mt-4">
             <div class="card text-center text-bg-light">
               <div class="card-header">
                 Akad Nikah
@@ -144,7 +145,7 @@
           </div>
           </div>
 
-          <div class="col-md-5 col-10">
+          <div class="col-md-5 col-10 mt-4">
             <div class="card text-center text-bg-light">
               <div class="card-header">
                 Resepsi
@@ -170,12 +171,233 @@
       </div>
     </section>
 
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>pertemuan yang tak disengaja mungkin saja itulah yang terbaik</span>
+            <h2>Our Story</h2>
+            <p>Perjalanan panjang telah kami lalui demi momen ini dan inilah cerita kami</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image" style="background-image: url(img/main.jpeg);">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-header">
+                    <h3>first meeting</h3>
+                    <span>14 Januari 2017</span>
+                  </div>
+
+                  <div class="timeline-body">
+                    <p>di dinginnya malam kulihat bidadari yang bersinar hingga menyamain indah nya bulan malam dan tanpa basa basi ku nyatakan perasaan ku saat itu juga.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-inverted">
+                <div class="timeline-image" style="background-image: url(img/maxresdefault.jpg);">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-header">
+                    <h3>talk about our future</h3>
+                    <span>20 mei 2018</span>
+                  </div>
+
+                  <div class="timeline-body">
+                    <p>bertemu secara langsung bukan hanya untuk melepas rindu namun membicarakan bagaimana jalur yang akan kita di ambil di masa depan.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="timeline-image" style="background-image: url(img/tkk57.jpg);">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-header">
+                    <h3>engagement</h3>
+                    <span>14 Januari 2020</span>
+                  </div>
+
+                  <div class="timeline-body">
+                    <p>pada hari ini kami putus kan untuk memiliki hubungan yang selangkah lebih serius dengan mengikrarkan janji di depan keluarga.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-inverted">
+                <div class="timeline-image" style="background-image: url(img/fposter.jpg);">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-header">
+                    <h3>marriage day plant</h3>
+                    <span>1 juli 2025</span>
+                  </div>
+
+                  <div class="timeline-body">
+                    <p>dan pada hari ini keluarga kami saling bertemu dan memutuskan hari pernikahan kita nanti.</p>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Our Memory</span>
+            <h2>Galeri Foto</h2>
+            <p>Di setiap perjalanan terpahat momen abadi dan berikut setiap pahatan momen berharga kami</p>
+          </div>
+
+          <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+            <div class="col mt-3">
+              <a href="img/Gallery/1.jpeg" data-toggle="lightbox" data-caption="Nasa & Tsukasa 1"data-gallery="myGallery">
+                <img src="img/Gallery/Thumbnails/1.jpeg" alt="tsuna 1" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+            <div class="col mt-3" >
+              <a href="img/Gallery/2.jpeg" data-toggle="lightbox" data-caption="Nasa & Tsukasa 2" data-gallery="myGallery">
+                <img src="img/Gallery/Thumbnails/2.jpeg" alt="tsuna 2" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+            <div class="col mt-3">
+              <a href="img/Gallery/3.jpg" data-toggle="lightbox" data-caption="Nasa & Tsukasa 3" data-gallery="myGallery">
+                <img src="img/Gallery/Thumbnails/3.jpg" alt="tsuna 3" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+            <div class="col mt-3">
+              <a href="img/Gallery/4.jpg" data-toggle="lightbox" data-caption="Nasa & Tsukasa 4" data-gallery="myGallery">
+                <img src="img/Gallery/Thumbnails/4.jpg" alt="tsuna 4" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+            <div class="col mt-3">
+              <a href="img/Gallery/5.jpg" data-toggle="lightbox" data-caption="Nasa & Tsukasa 5" data-gallery="myGallery">
+                <img src="img/Gallery/Thumbnails/5.jpg" alt="tsuna 5" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+            <div class="col mt-3">
+              <a href="img/Gallery/6.jpg" data-toggle="lightbox" data-caption="Nasa & Tsukasa 6" data-gallery="myGallery">
+                <img src="img/Gallery/Thumbnails/6.jpg" alt="tsuna 6" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp" class="rsvp">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Konfirmasi Kehadiran</h2>
+            <p>Isi Form di bawah ini untuk melakukan konfirmasi Kehadiran.</p>
+          </div>
+
+          <form class="row row-cols-md-6 g-3 align-items-center justify-content-center"  method="POST" 
+          action="https://script.google.com/macros/s/AKfycbzZCOnRDYW-4RS0Gv2K2qwMgaR1WOKjVMUmFJu8ZyiXph2M2ca4LO3YvZNwwRy1GsI2/exec" id="my-form">
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="Nama" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="nama" name="nama">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="jumlah" class="form-label">Jumlah</label>
+                <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" value="1" length="1">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="Status" class="form-label">kehadiran</label>
+                <select name="status" id="status" class="form-select">
+                  <option selected>Pilih Salah Satu</option>
+                  <option value="Hadir">Hadir</option>
+                  <option value="Tidak Hadir">Tidak Hadir</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12" style="margin-top: 38px;">
+              <button type="Kirim" class="btn btn-primary">Kirim</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="gift" class="gift">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Ungkapan Tanda Terima Kasih</span>
+            <h2>Kirim Hadiah</h2>
+            <p>Kebersamaan kita adalah yang utama, tetapi jika Anda ingin memberikan tanda kasih, kami sediakan nomor rekening dibawah ini.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="fw-bold">BCA</div>
+                123456789 - NASA YUZAKI
+              </li>
+              <li class="list-group-item">
+                <div class="fw-bold">MANDIRI</div>
+                987654321 - NASA YUZAKI
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block">&copy; 2024 Natsu Weding. All Right Reserved.</small>
+            <small class="block">Design by <a href="https://instagram.com/rafi.ardi.277">@rafi.ardi.277</a></small>
+            
+            <ul class="mt-3">
+              <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+              <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="#"><i class="bi bi-github"></i></a></li>
+              <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+              <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="audio-container">
+      <audio id="bgm" autoplay loop>
+        <source src="song/nandemonaiya.mp3" type="audio/mp3">
+      </audio>
+
+      <div class="audio-icon-wrapper" style="display: none;">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
 
     <script>
       simplyCountdown(".simply-countdown", {
@@ -190,6 +412,103 @@
           seconds: { singular: "detik", plural: "detik" },
         },
       })
+    </script>
+
+    <script>
+      const offcanvas = document.querySelector('.offcanvas')
+      const stickyTop = document.querySelector('.sticky-top')
+
+      offcanvas.addEventListener('show.bs.offcanvas', function(){ 
+        stickyTop.style.overflow = 'visible';
+      })
+
+      offcanvas.addEventListener('hidden.bs.offcanvas',function() {
+        stickyTop.style.overflow = 'hidden';
+      })
+    </script>
+
+    <script>
+      const rootElement = document.querySelector(':root');
+      const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
+      const song = document.querySelector('#bgm');
+      const audioIcon = document.querySelector('.audio-icon-wrapper i')
+      isPlaying = false;
+      
+      
+      function disableScroll(){
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function() {
+          window.scrollTo(scrollTop, scrollLeft);
+        }
+        
+        rootElement.style.scrollBehavior = 'auto'
+      }
+      
+      function enableScroll() {
+        window.onscroll = function() {}
+        rootElement.style.scrollBehavior = 'smooth'
+        // localStorage.setItem('opened', 'true')
+        playAudio();
+      }
+
+      function playAudio() {
+        song.volume = 0.4
+        audioIconWrapper.style.display = 'flex';
+        song.play();
+        isPlaying = true;
+      }
+
+      audioIconWrapper.onclick = function() {
+        if(isPlaying) {
+          song.pause();
+          audioIcon.classList.remove('bi-disc');
+          audioIcon.classList.add('bi-pause-circle');
+        }else {
+          song.play();
+          audioIcon.classList.add('bi-disc');
+          audioIcon.classList.remove('bi-pause-circle')
+        }
+
+        isPlaying = !isPlaying;
+      }
+
+
+      // if(!localStorage.getItem('opened')){
+      //   disableScroll()
+      // }
+      disableScroll()
+      </script>
+
+    <script>
+        window.addEventListener("load", function() {
+    const form = document.getElementById('my-form');
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const action = e.target.action;
+      fetch(action, {
+        method: 'POST',
+        body: data,
+      })
+      .then(() => {
+        alert("Berhasil Mengirim konfirmasi Kehahadiran!");
+      })
+    });
+  });
+
+    </script>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get('nama')||'';
+      const pronoun = urlParams.get('p')|| 'Bapak/Ibu/Saudara/i';
+      const namaContainer = document.querySelector('.hero h4 span');
+
+      namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
+
+        document.querySelector('#nama').value = nama;
     </script>
   </body>
 </html>

@@ -17,7 +17,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(img/OK.jpg);
+    background-image: url(img/OK2.jpeg);
     z-index: -1;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,16 +78,23 @@ body {
     font-style:bold;
 }
 
+.sticky-top{
+    overflow: hidden;
+}
 .home {
-    background-image: url(img/images.jpeg);
+    background-image: url(img/images3.jpeg);
     background-size: cover;
     min-height: 100vh ;
     margin-top: -6.3rem;
-    padding-top: 20rem;
+    padding-top: 15rem;
 }
 
 .home h2,
-.info h2{
+.info h2,
+.story h2,
+.gallery h2,
+.rsvp h2,
+.gift h2{
     color: var(--aqua);
     font-family: "Srisakdi";
     font-size: 5rem;
@@ -106,7 +113,7 @@ body {
 }
 
 .home .couple{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .home .couple h3{
@@ -147,13 +154,231 @@ body {
     font-size: 1.2rem;
 }
 
+.info .card{
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+    border: 1px solid #999;
+}
+
+.info .card-header{
+    border-bottom: 1px solid #999;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.info .card-footer{
+    border-top: 1px solid #999;    
+    font-size: 1rem;
+}
+
+.story,
+.gallery,
+.rsvp,
+.gift{
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+.story span,
+.gallery span,
+.gift span{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.story p,
+.gallery p,
+.rsvp p,
+.gift p{
+    font-size: 1rem;
+}
+
+.timeline {
+    list-style: none;
+    padding: 1.4rem 0;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.timeline::before{
+    content: '';
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 1px;
+    background-color: #ccc;
+    left: 50%;
+}
+
+.timeline li{
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.timeline li::before,
+.timeline li::after{
+    content: '';
+    display: table;
+}
+
+.timeline li::after{
+    clear: both;
+}
+
+.timeline li .timeline-image {
+    width: 160px;
+    height: 160px;
+    background-color: #ccc;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.timeline li .timeline-panel{
+    width: 40%;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    position: relative;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.timeline li .timeline-panel::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    top: 80px;
+    right: -15px;
+} 
+
+.timeline li .timeline-panel::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    top: 81px;
+    right: -13px;
+}
+
+.timeline li.timeline-inverted .timeline-panel{
+    content: '';
+    float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before{
+    border-left-width: 0;
+    border-right-width: 15px;
+    right: auto;
+    left: -15px;
+}
+
+.timeline li.timeline-inverted .timeline-panel::after{
+    border-left-width: 0;
+    border-right-width: 14px;
+    right: auto;
+    left: -13px;
+}
+
+.gallery{
+    background-color: #f4f4f4;
+}
+
+.rsvp {
+    background-color: var(--bg-color);
+}
+
+.rsvp h2{
+    font-size: 4.5rem;
+}
+
+.rsvp p,
+.rsvp form label{
+    color: white;
+}
+
+.rsvp button{
+    background-color: var(--aqua);
+    color: white;
+    border-color: 1px solid var(--aqua);
+}
+
+.rsvp button:hover{
+    background-color: white;
+    border-color: white;
+    color: var(--aqua);
+}
+
+footer {
+    padding: 3rem;
+    background-color: var(--aqua);
+    color: white;
+}
+
+footer a:hover{
+    color: white;
+}
+
+footer li{
+    list-style: none;
+    display: inline;
+    margin: 0.5rem;
+}
+
+.audio-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem;
+    cursor: pointer;
+    color: white;
+    opacity: 0.5;
+    mix-blend-mode: difference;
+    animation: muter 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+@keyframes muter {
+    form {
+
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
 /* Media Query */
+/* Extra Large */
 @media (max-width: 1200px){
     .home .heart{
     transform: translateX(-50%) translateY(45px);
     }
+
 }
 
+/* Laptop */
 @media (max-width: 992px){
     html {
         font-size: 75%;
@@ -161,8 +386,39 @@ body {
     .home .heart{
         display: none;
     }
-}
 
+    .timeline::before{
+        left: 60px;
+    }
+
+    .timeline li .timeline-image{
+        left: 15px;
+        margin-left: 45px;
+        top: 16px;
+    }
+
+    .timeline li .timeline-panel{
+        width: calc((100% - 200px));
+        float: right;
+    }
+
+    .timeline li .timeline-panel::before{
+        border-left-width: 0;
+        border-right-width: 15px;
+        right: auto;
+        left: -15px;
+    }
+
+    .timeline li .timeline-panel::after{
+        border-left-width: 0;
+        border-right-width: 14px;
+        right: auto;
+        left: -13px;
+    }
+}
+    
+
+/* Tablet */
 @media (max-width: 768px){
     html {
         font-size: 65%;
@@ -175,10 +431,34 @@ body {
     .mynavbar .nav-link{
         font-size: 2rem;
     }
+
+    .timeline li .timeline-image{
+        width: 140px;
+        height: 140px;
+    }
 }
 
+/* Mobile */
 @media (max-width: 576px){
     html {
         font-size: 60%;
+    }
+
+    .timeline li .timeline-image{
+        width: 80px;
+        height: 80px;
+    }
+
+    .timeline li .timeline-panel{
+        width: 65%;
+        transform: translateX(-20x);
+    }
+
+    .timeline li .timeline-panel::before{
+        top: 30px;
+    }
+
+    .timeline li .timeline-panel::after{
+        top: 31px;
     }
 }
